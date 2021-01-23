@@ -1,0 +1,22 @@
+{
+  "tests": [
+    {
+      "name": "Запуск тестов с coverage",
+      "setup": "",
+      "run": "python -m pytest --cov=.",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10
+    },
+    {
+      "name": "Нет файлов из .gitignore",
+      "setup": "",
+      "run": "git check-ignore --no-index ./**/* --verbose && exit 1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10
+    }
+  ]
+}
