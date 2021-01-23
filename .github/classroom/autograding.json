@@ -12,7 +12,7 @@
     {
       "name": "Нет файлов из .gitignore",
       "setup": "",
-      "run": "git check-ignore --no-index ./**/* --verbose && exit 1",
+      "run": "git check-ignore --no-index ./**/* --verbose 1>&2 && exit 1",
       "input": "",
       "output": "",
       "comparison": "included",
